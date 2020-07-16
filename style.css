@@ -1,0 +1,820 @@
+@charset "UTF-8";
+*{
+  background-color: black;
+}
+
+
+/* header */
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 100;
+  }
+.logo{
+      width: 20%;
+  }
+.logo>a{
+    display: flex;
+    text-decoration: none;
+    margin: 10px 10px;
+  }
+.logo>a>img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+.logo>a>.logotext{
+    color: rgb(223, 67, 61);
+    align-self: center;
+    font-size: 14px;
+  }
+.logo>a>.logotext>span{
+    display: block;   /*spanをブロック要素にしてstrongを折り返す*/
+  }
+.main_nav{
+  display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 60%;
+}
+.main_nav>li{
+  margin-right: 30px;
+}
+.main_nav>li:last-child{
+  margin-right: 0;
+}
+.main_nav>li>a{
+  color: rgb(223, 67, 61);
+  font-size: 17px;
+  text-decoration: none;
+}
+.sub_nav{
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  width: 20%;
+}
+.sub_nav>li{
+  margin-right: 8px;
+}
+.sub_nav>li:last-child{
+  margin-right: 10px;
+}
+.sub_nav>li>a>img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .shake:hover {
+    display: inline-block;
+    animation: hurueru .3s  infinite;
+  }
+  
+  @keyframes hurueru {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(8px, 8px) rotateZ(1deg)}
+    50% {transform: translate(0px, 8px) rotateZ(0deg)}
+    75% {transform: translate(8px, 0px) rotateZ(-1deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+  }
+
+
+
+
+
+  /* ここからpartner */
+.partner{
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin: 150px auto;
+  /* position: absolute; */
+}
+
+
+.partner>.partner1>li>a>img {
+  transition: all 0.6s ease 0s;
+}
+.partner>.partner1>li>a>img:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
+
+
+.partner>.partner2>li>a>img {
+  transition: all 0.6s ease 0s;
+}
+.partner>.partner2>li>a>img:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
+
+
+.partner1{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  /* z-index: 100; */
+}
+
+.partner2{
+  display: flex;
+  justify-content: space-around;
+  /* z-index: 100; */
+}
+
+
+
+
+
+/* footer */
+
+footer{
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+.footer_nav{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.footer_nav>li{
+  margin-right: 10px;
+}
+.footer_nav>li:last-child{
+  margin-right: 0;
+}
+
+.footer_nav>li>a>img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+footer>p{
+  color: rgb(223, 67, 61);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+
+
+/* pageTop */
+#pageTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+#pageTop>a{
+  display: block;
+  z-index: 999;
+  text-decoration: none;
+  text-align: center;
+}
+#pageTop>a>img {
+  height: 50px;
+  line-height: 70px;
+  border-radius: 50%;
+}
+#pageTop>a>span {
+  position: absolute;
+  color: white;
+  font-weight: bolder;
+  top: 50%;
+  left: 50%;
+  margin:0;
+  padding:0;
+  transform: translate(-50%,-50%);
+}
+#pageTop a:hover {
+  text-decoration: none;
+  animation: roll 0.7s linear infinite;
+}
+@keyframes roll {
+  from { transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* indexhtml */
+
+/* ここからmainvisual */
+.mainvisual{
+  position: relative;
+  height: 100vh;
+}
+.mainvisual>img{
+  height: 100vh;
+  width: 100%;
+}
+.mainvisual>h2{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  color: rgb(223, 67, 61);
+  font-size: 100px;
+  font-weight: bolder;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* ここからswiper */
+.swiper-container{
+  width: 100%;
+  height: 500px;
+  margin-top: 150px;
+}
+
+
+
+
+/* 体験 */
+.swiper-slide1 > a > img{
+	transition:		all 0.4s ease;
+	transform:		scale(1); /*元の大きさで表示*/
+}
+
+
+.swiper-slide1 > a > .swiper-mask1 {
+	width:			1000px;
+	height:			50px;
+	position:		absolute;
+	top:			-50px;	/* 枠の上に置いて表示しない */
+	left:			0;
+	transition:		all 0.4s ease;
+}
+
+
+.swiper-slide1 > a:hover .swiper-mask1 {
+	top:		0px;	/* 下に降りてくるように見せる */
+	font-size:		300%;
+  color: rgb(223, 67, 61);
+  text-align: center;
+  font-weight: bolder;
+}
+
+.swiper-slide1 > a:hover img {
+	margin-top:		50px;			/* 画像の絵を下にずらす */
+	transform:		scale(0.88); /* 小さいサイズで表示 */
+}
+
+
+/* 自販機 */
+.swiper-slide2 {
+	width:			100%;
+	height:			100%;
+	position:		relative;
+}
+.swiper-slide2 .swiper-mask2 {
+	font-size:	300%;
+	color:			rgb(223, 67, 61);
+  text-align: 		center;
+  font-weight: bolder;
+	padding-top:		230px;
+}
+.swiper-slide2 .swiper-mask2 {
+	width:			1000px;
+	height:			100%;
+	position:		absolute;
+	top:			0;
+	left:			0;
+	opacity:		0;	/* 表示させない */
+	/* background-color:	rgba(0,0,0,0.4); */
+	transition:		all 0.6s ease;
+}
+.swiper-slide2:hover .swiper-mask2 {
+	transform:		rotate(360deg);
+	opacity:		1;	/* ホバーで表示する */
+}
+
+
+/* 選手募集 */
+.swiper-slide3 {
+	width:			100%;
+	height:			100%;
+	position:		relative;	/* 相対位置指定 */
+}
+
+
+.swiper-slide3 .swiper-mask3 {
+	width:			1000px;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	/* background-color:	rgba(0,0,0,0.4); */
+  transition:		all 0.2s ease;
+  font-size:		500%;
+  font-weight: bolder;
+  color:			rgb(223, 67, 61);
+}
+
+.swiper-slide3 .swiper-mask3>div{
+	position: absolute;
+	right: 0;
+  bottom: 0;
+  letter-spacing: 10px;
+}
+
+
+.swiper-slide3:hover .swiper-mask3 {
+	opacity:		1;	/* マスクを表示する */
+}
+
+
+
+
+
+
+
+
+/* ここからmatches */
+.matches {
+  background-color: black;
+  color: rgb(223, 67, 61);
+  height: 50vh;
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 150px;
+}
+.matches > h3 {
+  font-size: 100px;
+  margin-bottom: 100px;
+}
+.Wmatches {
+  display:flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+}
+
+.latest {
+  border: solid 3px rgb(223, 67, 61);
+  border-radius: 10px;
+  width: 30%;
+} 
+
+.next {
+  border: solid 3px rgb(223, 67, 61);
+  border-radius: 10px;
+  width: 30%;
+}
+
+.latest p {
+  font-size: 35px;
+  background: rgb(223, 67, 61);
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  width: auto;
+}
+
+.next p {
+  font-size: 35px;
+  background: rgb(223, 67, 61);
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  width: auto;
+}
+
+
+.latestlist {
+  padding: 15px 20px;
+  height: 70%;
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.nextlist {
+  padding: 15px 20px;
+  height: 70%;
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.latestmain {
+  font-size: 45px;
+}
+.nextmain {
+font-size: 45px;
+}
+.Wmatches a {
+  color: rgb(223, 67, 61);
+}
+
+
+
+
+/* ここからranking*/
+
+
+.ranking {
+  margin-top: 250px;
+  /* padding: 50px 30px; */
+  position: relative;
+  z-index: 0;
+  background-color: rgb(223, 67, 61);
+}
+.ranking::after{
+  content: '';
+  position: absolute;
+  left:0;
+  top: 0;
+ 
+  /*四角形を傾ける*/
+  transform: skewY(-5deg);
+  transform-origin: bottom left;
+ 
+  z-index: -1;
+  width:100%;
+  height:100%;
+  background:rgb(223, 67, 61);
+}
+
+.rank-center{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+
+.ranking h3{
+  font-size: 100px;
+}
+
+
+.rank-contents{
+  display: flex;
+  align-items: center;
+}
+
+
+
+.ranking .number{
+  font-size: 200px;
+  font-weight: bolder;
+}
+
+.ranking .place{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+
+.standings{
+  font-weight: bolder;
+font-size: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+/* ここからnews */
+.info{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150px;
+}
+
+.info>.news{
+  width: 100%;
+  display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+
+.info>.sns{
+  width: 100%;
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+
+.info>.news>h3{
+  font-size: 100px;
+  color: rgb(223, 67, 61);
+  margin-bottom: 80px;
+}
+
+.info>.sns>h3{
+  font-size: 100px;
+  color: rgb(223, 67, 61);
+  margin-bottom: 100px;
+}
+
+.ns-contents{
+display: flex;
+flex-direction: column;
+}
+
+.ns-contents>li{
+  width: 100%;
+  height: 150px;
+  border: solid 3px rgb(223, 67, 61);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.ns-contents>li>a{
+  display: flex;
+  text-decoration: none;
+}
+
+.ns-contents>li>a>img{
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.ns-contents>li>a>div>p{
+  color: rgb(223, 67, 61);
+  padding: 10px;
+}
+
+.info>.news>.ns-more{
+  text-align: center;
+}
+
+.info>.news>.ns-more>a{
+  color: rgb(223, 67, 61);
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TEAMhtml */
+.player_fix{
+  background: url(./img/team.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  min-height: 2800px;
+  background-attachment: fixed;
+}
+
+
+
+.player_wrap{
+  position: absolute;
+  }
+
+
+.player_wrap h3{
+  width: 100%;
+  font-size: 100px;
+  color:rgb(223, 67, 61);
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin: 150px auto;
+}
+
+
+.player1{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.person{
+  background-color: white;
+  margin: 20px 0;
+}
+
+
+.player1 li img{
+  width: 280px;
+  height: 300px;
+}
+
+
+.profile{
+  text-align:center;
+  color:rgb(223, 67, 61);
+  font-weight: bolder;
+}
+
+
+
+.wanted {
+  width: 50%;
+  height: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    color: rgb(223, 67, 61);
+    font-weight: bolder;
+    border-radius: 5px;
+margin: 0 auto;
+padding: 5px;
+margin-top: 100px;
+}
+
+
+.wanted h4{
+  font-size: 50px;
+  }
+
+
+  .wanted p{
+    font-size: 25px;
+line-height: 1.5em;
+    }
+ 
+    .wanted .wanted-p-first{
+      margin-top: 15px;
+    }
+
+    .wanted .wanted-p-last{
+margin-bottom: 15px;
+    }
+
+    .wanted a{
+      margin-top: 10px;
+      color: rgb(223, 67, 61);
+      text-decoration: none;
+      transition: all 0.6s ease 0s;
+      }
+
+
+      .wanted .wantedmap{
+margin-bottom: 10px;
+      }
+
+      .wanted a:hover {
+        cursor: pointer;
+        transform: scale(1.2, 1.2);
+      }
+
+
+
+
+
+
+/* CLUBhtml */
+
+.club-fx{
+  background: url(./img/club-flag.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  min-height: 2800px;
+  background-attachment: fixed;
+}
+
+
+
+.club-bg{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 80%;
+  min-height: 2800px;
+  }
+
+
+  .club-bg h3{
+    width: 100%;
+    font-size: 60px;
+    color:rgb(223, 67, 61);
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: 100px auto;
+  }
+
+  .club-erythrina-text{
+    width: 100%;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+
+.club-erythrina img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.club-erythrina p{
+width: 85%;
+margin-top: 50px;
+color: rgb(223, 67, 61);
+font-size: 20px;
+background-color: rgba(0,0,0,0.7);
+padding: 25px;
+text-align: justify;
+}
+
+
+.emblem-text{
+  width: 100%;
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+.emblem img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+
+.emblem-text p{
+  width: 85%;
+  margin-top: 50px;
+  color: rgb(223, 67, 61);
+  font-size: 20px;
+  background-color: rgba(0,0,0,0.7);
+  padding: 25px;
+  text-align: justify;
+  }
+
+
+
+
+
+
+
+
+
+  .about-beachsocor p{
+    width: 85%;
+    margin-top: 50px;
+    color: rgb(223, 67, 61);
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.7);
+    padding: 25px;
+    text-align: justify;
+    }
+
+
