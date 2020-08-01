@@ -858,6 +858,181 @@ align-items: center;
 
 
 
+
+
+
+
+
+
+
+
+
+
+    /* PARTNERhtml */
+
+    .partner_wrap {
+      color: rgb(223, 67, 61);
+      width: 100%;
+      height: 100%;
+      padding-top: 150px;
+      display:flex;
+  flex-flow: column;
+  align-items: center;
+    }
+    .partner_wrap > h3 {
+      font-size: 100px;
+      margin-bottom: 100px;
+    }
+
+    .partner_wrap > .partners{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+      height: 100%;
+    }
+
+    .partner_wrap > .partners>.partner-list{
+      width: 600px;
+      height: 400px;
+      margin-bottom: 80px;
+      border-bottom: 3px solid;
+    }
+
+
+
+    .partner_wrap > .partners>.partner-list a{
+      text-decoration: none;
+      color: rgb(223, 67, 61);
+      font-size: 1.5em;
+    }
+
+    .partner_wrap > .partners>.partner-list a:hover{
+      opacity: 0.7;
+    }
+
+    .partner_wrap > .partners>.partner-list .partnerfile{
+      display:flex;
+      flex-flow: column;
+      align-items: center;
+      align-content:space-around;
+      text-align: center;
+      width: 100%;
+    }
+    .partner_wrap > .partners>.partner-list .partnerfile a{
+
+      margin: 8px auto;
+      text-align: center;
+    }
+
+    .partner_wrap > .partners>.partner-list .partnerfile p{
+      width: 85%;
+      text-align: justify;
+margin-top: 8px;
+    }
+    .partner_wrap > .partners>.partner-list .partnerfile div{
+       text-align: center;
+    }
+
+ 
+
+
+      .withpartner{
+      margin-top: 100px;
+      padding: 15px;
+      width: 700px;
+      border:  solid 10px;
+      display:flex;
+      flex-flow: column;
+      align-items: center;
+      }
+
+      .withpartner h4{
+        font-size: 25px;
+      }
+
+      .withpartner p{
+        margin: 10px auto;
+        width: 85%;
+      }
+
+      .withpartner a{
+        color: rgb(223, 67, 61);
+        text-decoration: none;
+        transition: all 0.6s ease 0s;
+
+        }
+  
+  
+  
+        .withpartner a:hover {
+          cursor: pointer;
+          transform: scale(1.2, 1.2);
+        }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MAKINGhtml */
 .making-bg img{
 width: 100%;
