@@ -208,6 +208,9 @@ footer>p{
 
 
 /* indexhtml */
+.toppage .nav-top a{
+  color: white;
+}
 
 /* ここからmainvisual */
 .mainvisual{
@@ -491,7 +494,7 @@ footer>p{
 .info>.news>h3{
   font-size: 100px;
   color: rgb(223, 67, 61);
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 .info>.sns>h3{
   font-size: 100px;
@@ -529,12 +532,39 @@ flex-direction: column;
   color: rgb(223, 67, 61);
   text-decoration: none;
 }
+.sns .inst-mv{
+  margin-top: 50px;
+}
+.sns .inst-mv .instagram-media{
+  height: 480px;
+}
+
+
+
+
+
+/* NEWShtml */
+.matchespage .nav-matches a{
+  color: white;
+}
+
+
+
+
+
+/* MATCHEShtml */
+.newspage .nav-news a{
+  color: white;
+}
 
 
 
 
 
 /* TEAMhtml */
+.teampage .nav-team a{
+  color: white;
+}
 .player_fix{
   background: url(./img/team.jpg);
   background-repeat: no-repeat;
@@ -621,12 +651,15 @@ flex-direction: column;
 
 
 /* CLUBhtml */
+.clubpage .nav-club a{
+  color: white;
+}
 .club-fx{
   background: url(./img/club-flag.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
-  min-height: 3000px;
+  height: 3500px;
   background-attachment: fixed;
 }
 .club-bg{
@@ -638,15 +671,15 @@ flex-direction: column;
   -ms-transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.5);
   width: 80%;
-  min-height: 3000px;
+  height: 3500px;
 }
 .club-bg h3{
   width: 100%;
-  font-size: 60px;
+  font-size: 80px;
   color: rgb(223, 67, 61);
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
-  margin: 100px auto;
+  margin: 150px auto 100px auto;
 }
 .club-erythrina-text{
   width: 100%;
@@ -661,7 +694,7 @@ flex-direction: column;
 }
 .club-erythrina p{
   width: 85%;
-  margin-top: 50px;
+  margin-top: 100px;
   color: rgb(223, 67, 61);
   font-size: 20px;
   background-color: rgba(0,0,0,0.7);
@@ -681,7 +714,7 @@ flex-direction: column;
 }
 .emblem-text p{
   width: 85%;
-  margin-top: 50px;
+  margin-top: 100px;
   color: rgb(223, 67, 61);
   font-size: 20px;
   background-color: rgba(0,0,0,0.7);
@@ -702,7 +735,7 @@ flex-direction: column;
 }
 .club-history table{
   width: 85%;
-  margin-top: 50px;
+  margin-top: 100px;
   color: rgb(223, 67, 61);
   font-size: 20px;
   background-color: rgba(0,0,0,0.7);
@@ -719,7 +752,7 @@ flex-direction: column;
 }
 .about-beachsocor p{
   width: 85%;
-  margin-top: 50px;
+  margin-top: 100px;
   color: rgb(223, 67, 61);
   font-size: 20px;
   background-color: rgba(0,0,0,0.7);
@@ -732,6 +765,9 @@ flex-direction: column;
 
 
 /* PARTNERhtml */
+.partnerpage .nav-partner a{
+  color: white;
+}
 .partner_wrap{
   color: rgb(223, 67, 61);
   width: 100%;
@@ -754,7 +790,7 @@ flex-direction: column;
 }
 .partner_wrap>.partners>.partner-list{
   width: 600px;
-  height: 400px;
+  height: 500px;
   margin-bottom: 80px;
   border-bottom: 3px solid;
 }
@@ -773,6 +809,7 @@ flex-direction: column;
   align-content: space-around;
   text-align: center;
   width: 100%;
+  margin-top: 50px;
 }
 .partner_wrap>.partners>.partner-list .partnerfile a{
   margin: 8px auto;
@@ -816,19 +853,60 @@ flex-direction: column;
 
 
 
-/* CONTACThtml */
-
-
-
-
-
-
-
-
-
-
-
-
+/* ACCESShtml */
+.accesspage .nav-access a{
+  color: white;
+}
+.contactus{
+  color: rgb(223, 67, 61);
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.practiceplace{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.practiceplace>h3{
+  font-size: 100px;
+  margin-bottom: 100px;
+}
+.practiceplace>h4{
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+.practiceplace p{
+  width: 80%;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+.contactus a{
+  text-decoration: none;
+  color: rgb(223, 67, 61);
+  margin-bottom: 10px;
+}
+.practiceplace a:hover{
+  opacity: 0.7;
+}
+.practiceplace iframe{
+  margin: 40px auto;
+}
+.coution{
+  width: 60%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.coution p a strong{
+  font-size: 20px;
+}
 
 
 
