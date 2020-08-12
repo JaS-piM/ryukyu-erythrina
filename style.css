@@ -335,25 +335,14 @@ footer > p {
   width: 100%;
   height: 50%;
 }
-.latest {
-  border: 3px solid rgb(223, 67, 61);
-  border-radius: 10px;
-  width: 30%;
-}
+.latest,
 .next {
   border: 3px solid rgb(223, 67, 61);
   border-radius: 10px;
   width: 30%;
+  height: 100%;
 }
-.latest p {
-  font-size: 35px;
-  background: rgb(223, 67, 61);
-  text-align: center;
-  color: #000;
-  font-weight: bold;
-  letter-spacing: 0.05em;
-  width: auto;
-}
+.latest p,
 .next p {
   font-size: 35px;
   background: rgb(223, 67, 61);
@@ -361,32 +350,52 @@ footer > p {
   color: #000;
   font-weight: bold;
   letter-spacing: 0.05em;
-  width: auto;
+  width: 100%;
 }
-.latestlist {
-  padding: 15px 20px;
-  height: 70%;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: space-around;
-}
+.latestlist,
 .nextlist {
-  padding: 15px 20px;
-  height: 70%;
+  padding-top: 16px;
+  width: 100%;
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: space-around;
 }
-.latestmain {
-  font-size: 45px;
-}
+.latestmain,
 .nextmain {
-  font-size: 45px;
+  width: 100%;
+}
+.latestmain > table,
+.nextmain > table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.latestmain > table th,
+.latestmain > table td,
+.nextmain > table th,
+.nextmain > table td {
+  width: 30%;
+  padding: 10px 0;
+  text-align: center;
+}
+.latestmain > table th,
+.nextmain > table th {
+  font-size: 40px;
+}
+.latestmain > table td,
+.nextmain > table td {
+  font-size: 17px;
+}
+.latestmain tr .nextmain tr {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .Wmatches a {
   color: rgb(223, 67, 61);
+}
+.Wmatches a:hover {
+  opacity: 0.7;
 }
 
 /* ここからranking*/
@@ -514,7 +523,7 @@ footer > p {
 }
 
 /* NEWShtml */
-.matchespage .nav-matches a {
+.newspage .nav-news a {
   color: white;
 }
 .newshtml {
@@ -570,7 +579,7 @@ footer > p {
   padding-top: 100px;
 }
 .schedulewrap table {
-  width: 80%;
+  width: 60%;
   border-collapse: collapse;
   border: 2px solid white;
   color: white;
@@ -612,8 +621,55 @@ footer > p {
 }
 
 /* MATCHEShtml */
-.newspage .nav-news a {
+.matchespage .nav-matches a {
   color: white;
+}
+.matcheranking {
+  width: 100%;
+  height: 100%;
+  color: rgb(223, 67, 61);
+}
+.allmatches2020,
+.all-standings {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.matcheranking h3 {
+  padding: 150px 0 100px 0;
+  font-size: 100px;
+}
+.allmatches2020 > table {
+  width: 70%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.allmatches2020 > table th,
+.allmatches2020 > table td {
+  padding: 10px 0;
+  text-align: center;
+}
+.allmatches2020 > table tr:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.all-standings > table {
+  width: 30%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.all-standings > table th,
+.all-standings > table td {
+  padding: 10px 0;
+  text-align: center;
+}
+.all-standings > table th {
+  font-size: 20px;
+}
+.all-standings > table td {
+  font-size: 17px;
+}
+.all-standings > table tr:first-child {
+  background-color: rgba(223, 67, 61, 0.3);
 }
 
 /* TEAMhtml */
