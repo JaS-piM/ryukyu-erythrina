@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8">
@@ -14,15 +14,23 @@
 
 <body class="toppage">
   <header>
+    <!-- 🍔 -->
+    <!-- <input id="menu" type="checkbox" /> -->
+    <!-- <label for="menu" class="open">🍔</label> -->
+    <!-- <label for="menu" class="back"></label> -->
+    <!-- 🍔 -->
     <h1 class="logo">
       <a href="./index.html">
         <img src="./img/home_logo_1.jpg" alt="琉球エリスリナ">
-        <span class="logotext pc">
+        <span class="logotext">
           <span>Beach Soccor Team</span>
           <strong>RYUKYU ERYTHRINA</strong>
         </span>
       </a>
     </h1>
+    <!-- 🍔 -->
+    <!-- <label for="menu" class="close">×</label> -->
+    <!-- 🍔 -->
     <ul class="main_nav pc">
       <li class="nav-top pc"><a href="./index.html">TOP</a></li>
       <li class="nav-news pc"><a href="./news.html">NEWS</a></li>
@@ -32,16 +40,6 @@
       <li class="nav-partner pc"><a href="./partner.html">PARTNER</a></li>
       <li class="nav-access pc"><a href="./beach.html">BEACH</a></li>
     </ul>
-    <ul class="main_nav_sp sp">
-      <li class="nav-top sp"><a href="./index.html">TOP</a></li>
-      <li class="nav-news sp"><a href="./news.html">NEWS</a></li>
-      <li class="nav-matches sp"><a href="./matches.html">MATCHES</a></li>
-      <li class="nav-team sp"><a href="./team.html">TEAM</a></li>
-      <li class="nav-club sp"><a href="./club.html">CLUB</a></li>
-      <li class="nav-partner sp"><a href="./partner.html">PARTNER</a></li>
-      <li class="nav-access sp"><a href="./beach.html">BEACH</a></li>
-    </ul>
-
     <ul class="sub_nav pc">
       <li class="pc">
         <a href="./making.html"><img class="shake" src="./img/sns_YouTube_logo.png" alt="YouTube"></a>
@@ -59,22 +57,46 @@
       </li>
     </ul>
 
-    <ul class="sub_nav_sp sp">
-      <li class="sp">
-        <a href="./making.html"><img class="shake" src="./img/sns_YouTube_logo.png" alt="YouTube"></a>
-      </li>
-      <li class="sp">
-        <a href="https://www.facebook.com/beachsoccerclub.okinawa/" target="blank"><img class="shake"
-            src="./img/sns_Facebook_logo.png" alt="Facebook"></a>
-      </li>
-      <li class="sp">
-        <a href="https://www.instagram.com/ryukyuerythrina/" target="blank"><img class="shake"
-            src="./img/sns_Instagram_logo.png" alt="Instagram"></a>
-      </li>
-      <li class="sp">
-        <a href="./making.html"><img class="shake" src="./img/sns_Twitter_logo.png" alt="Twittwr"></a>
-      </li>
-    </ul>
+
+    <input type="checkbox" class="check sp" id="checked">
+    <label class="menu-btn sp" for="checked">
+      <span class="bar top"></span>
+      <span class="bar middle"></span>
+      <span class="bar bottom"></span>
+      <span class="menu-btn__text">MENU</span>
+    </label>
+    <label class="close-menu sp" for="checked"></label>
+
+
+    <nav class="drawer-menu sp">
+      <ul class="sp_nav sp">
+        <li class="nav-top"><a href="./index.html">TOP</a></li>
+        <li class="nav-news"><a href="./news.html">NEWS</a></li>
+        <li class="nav-matches"><a href="./matches.html">MATCHES</a></li>
+        <li class="nav-team"><a href="./team.html">TEAM</a></li>
+        <li class="nav-club"><a href="./club.html">CLUB</a></li>
+        <li class="nav-partner"><a href="./partner.html">PARTNER</a></li>
+        <li class="nav-access"><a href="./beach.html">BEACH</a></li>
+        <li>
+          <ul class="sp_sub_nav">
+            <li class="">
+              <a href="./making.html"><img class="shake" src="./img/sns_YouTube_logo.png" alt="YouTube"></a>
+            </li>
+            <li class="">
+              <a href="https://www.facebook.com/beachsoccerclub.okinawa/" target="blank"><img class="shake"
+                  src="./img/sns_Facebook_logo.png" alt="Facebook"></a>
+            </li>
+            <li class="">
+              <a href="https://www.instagram.com/ryukyuerythrina/" target="blank"><img class="shake"
+                  src="./img/sns_Instagram_logo.png" alt="Instagram"></a>
+            </li>
+            <li class="">
+              <a href="./making.html"><img class="shake" src="./img/sns_Twitter_logo.png" alt="Twittwr"></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -84,7 +106,7 @@
       <h2>RYUKYU ERYTHRINA</h2>
     </div>
 
-    <div class="mainvisual sp">
+    <div class="sp_mainvisual sp">
       <img src="./img/home_main_visual_sp.jpg" alt="メインヴィジュアル">
       <h2>RYUKYU ERYTHRINA</h2>
     </div>

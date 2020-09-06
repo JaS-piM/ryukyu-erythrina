@@ -48,7 +48,12 @@ $(function () {
 var swiper = new Swiper('.swiper-container', {
     effect: 'coverflow',
     loop: true,
-    slidesPerView: 1.5,
+    slidesPerView: 1,
+    breakpoints: {
+        480: {
+            slidesPerView: 1.5,
+        }
+    },
     spaceBetween: 10,
     centeredSlides: true,
     autoplay: {
