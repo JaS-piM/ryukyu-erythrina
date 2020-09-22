@@ -9,7 +9,7 @@
 .sp {
   display: none;
 }
-/* header */
+/* 共通header */
 header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -102,7 +102,7 @@ header {
   }
 }
 
-/* ここからpartner */
+/* 共通partner */
 .partner {
   width: 85%;
   display: flex;
@@ -137,7 +137,7 @@ header {
   justify-content: space-around;
 }
 
-/* footer */
+/* 共通footer */
 footer {
   width: 100%;
   height: auto;
@@ -165,7 +165,7 @@ footer > p {
   text-align: center;
 }
 
-/* pageTop */
+/* 共通pageTop */
 #pageTop {
   position: fixed;
   bottom: 20px;
@@ -206,12 +206,12 @@ footer > p {
   }
 }
 
-/* indexhtml */
+/* PC > indexhtml */
 .toppage .nav-top a {
   color: white;
 }
 
-/* ここからmainvisual */
+/* PC > indexhtml > mainvisual */
 .mainvisual {
   position: relative;
   height: 100vh;
@@ -238,7 +238,7 @@ footer > p {
   text-align: center;
 }
 
-/* ここからswiper */
+/* PC > indexhtml > swiper */
 .swiper-container {
   width: 100%;
   height: 500px;
@@ -326,7 +326,7 @@ footer > p {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* ここからmatches */
+/* PC > indexhtml > matches */
 .matches {
   background-color: black;
   color: rgb(223, 67, 61);
@@ -410,7 +410,7 @@ footer > p {
   opacity: 0.7;
 }
 
-/* ここからranking*/
+/* PC > indexhtml > ranking*/
 .ranking {
   margin-top: 250px;
   position: relative;
@@ -467,7 +467,7 @@ footer > p {
   opacity: 0.6;
 }
 
-/* ここからinfo */
+/* PC > indexhtml > info */
 .info {
   width: 100%;
   display: flex;
@@ -534,7 +534,7 @@ footer > p {
   height: 480px;
 }
 
-/* NEWShtml */
+/* PC > newshtml */
 .newspage .nav-news a {
   color: white;
 }
@@ -627,12 +627,14 @@ footer > p {
 .schedulewrap div a {
   color: rgb(223, 67, 61);
   text-decoration: none;
+  font-size: 22px;
+  margin: 15px 0;
 }
 .schedulewrap div a:hover {
   opacity: 0.7;
 }
 
-/* MATCHEShtml */
+/* PC > matcheshtml */
 .matchespage .nav-matches a {
   color: white;
 }
@@ -684,7 +686,7 @@ footer > p {
   background-color: rgba(223, 67, 61, 0.3);
 }
 
-/* TEAMhtml */
+/* PC > teamhtml */
 .teampage .nav-team a {
   color: white;
 }
@@ -814,7 +816,7 @@ footer > p {
   transform: scale(1.2, 1.2);
 }
 
-/* CLUBhtml */
+/* PC clubhtml */
 .clubpage .nav-club a {
   color: white;
 }
@@ -921,7 +923,7 @@ footer > p {
   text-align: justify;
 }
 
-/* PARTNERhtml */
+/* PC > partnerhtml */
 .partnerpage .nav-partner a {
   color: white;
 }
@@ -1006,7 +1008,7 @@ footer > p {
   transform: scale(1.2, 1.2);
 }
 
-/* BEACHhtml */
+/* PC > beachhtml */
 .accesspage .nav-access a {
   color: white;
 }
@@ -1082,7 +1084,7 @@ footer > p {
   font-size: 20px;
 }
 
-/* MAKINGhtml */
+/* PC > makinghtml */
 .making-bg img {
   width: 100%;
   height: 100vh;
@@ -1159,7 +1161,7 @@ img {
   width: 100%;
   height: auto;
 }
-/* header */
+/* SP > 共通header */
 header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -1364,7 +1366,7 @@ header {
   opacity: 1;
   z-index: 2;
 }
-/* ここからpartner */
+/* SP > 共通partner */
 .partner{
   margin-top: 25px;
   width: 100%;
@@ -1382,11 +1384,11 @@ justify-content: space-around;
   height: 45px;
   margin-bottom: 15px;
 }
-/* ここからpagetop */
+/* SP > 共通pagetop */
 #pageTop {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 15px;
+  right: 8px;
   z-index: 100;
 }
 #pageTop > a {
@@ -1396,8 +1398,8 @@ justify-content: space-around;
   text-align: center;
 }
 #pageTop > a > img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   /* line-height: 70px; */
   border-radius: 50%;
 }
@@ -1416,7 +1418,7 @@ justify-content: space-around;
 #pageTop a:hover {
   text-decoration: none;
 }
-/* footer */
+/* SP > 共通footer */
 footer {
   width: 100%;
   height: auto;
@@ -1429,8 +1431,8 @@ footer > p {
   text-align: center;
   font-size: 11px;
 }
-
-/* ここからmainvisual */
+/* SP > indexhtml */
+/* SP > indexhtml > mainvisual */
 .sp_mainvisual {
   width: 100%;
   position: relative;
@@ -1456,10 +1458,11 @@ footer > p {
   /* line-height: 1.5em; */
 }
 
-/* ここからswiper */
+/* SP > indexhtml > swiper */
 .swiper-container{
   width: 100%;
   height: 220px;
+  margin-top: 30px;
 }
 .swiper-wrapper .swiper-slide a img {
   width: 100%;
@@ -1541,7 +1544,7 @@ footer > p {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* ここからmatches */
+/* SP > indexhtml > matches */
 .matches {
   /* background-color: black; */
   color: rgb(223, 67, 61);
@@ -1550,11 +1553,11 @@ footer > p {
   flex-flow: column;
   align-items: center;
   /* justify-content: space-around; */
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .matches > h3 {
   font-size: 35px;
-  /* margin-bottom: 100px; */
+  margin-bottom: 30px;
 }
 .Wmatches {
   /* display: flex; */
@@ -1620,14 +1623,19 @@ footer > p {
   justify-content: space-around;
   align-items: center;
 }
+.latestmore,
+.nextmore{
+  margin-bottom: 10px;
+}
 .Wmatches a {
   color: rgb(223, 67, 61);
+  text-decoration: none;
 }
 .Wmatches a:hover {
   opacity: 0.7;
 }
 
-/* ここからranking*/
+/* SP > indexhtml > ranking*/
 .ranking {
   margin-top: 50px;
   position: relative;
@@ -1684,7 +1692,7 @@ footer > p {
   opacity: 0.6;
 }
 
-/* ここからinfo */
+/* SP > indexhtml > info */
 .info {
   width: 100%;
   /* display: flex; */
@@ -1699,6 +1707,7 @@ footer > p {
 }
 .info > .sns {
   width: 100%;
+  margin-top: 50px;
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: center; */
@@ -1720,7 +1729,7 @@ footer > p {
 }
 .ns-contents > li {
   /* width: 100%; */
-  height: 100px;
+  /* height: 100px; */
   border: 2px solid rgb(223, 67, 61);
   border-radius: 10px;
   margin-bottom: 10px;
@@ -1731,16 +1740,17 @@ footer > p {
 }
 .ns-contents > li > a > img {
   width: 150px;
-  height: 100px;
+  height: 130px;
   border-radius: 10px;
 }
 .ns-contents > li > a > div > p {
   color: rgb(223, 67, 61);
-  padding: 10px;
-  font-size: 10px;
+  padding: 8px;
+  font-size: 14px;
 }
 .info > .news > .ns-more {
   text-align: center;
+  margin-top: 30px;
 }
 .info > .news > .ns-more > a {
   color: rgb(223, 67, 61);
@@ -1761,6 +1771,162 @@ footer > p {
   /* max-width: 100%; */
 }
 
+/* SP > newshtml */
+.newshtml {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  color: rgb(223, 67, 61);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.newshtml .newswrap {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.newshtml .NEW,
+.newshtml .sch {
+  padding-bottom: 50px;
+  font-size: 35px;
+}
+.newshtml .tra {
+  font-size: 35px;
+}
+.newshtml .news-contents {
+  width: 90%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.newshtml .news-contents li {
+  width: 100%;
+  border-bottom: 2px solid rgb(223, 67, 61);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.newshtml .news-contents li a {
+  color: rgb(223, 67, 61);
+  display: flex;
+  text-decoration: none;
+}
+.newshtml .news-contents li a img {
+  width: 150px;
+  height: 130px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.newshtml .news-contents li a .caption {
+  padding: 0 10px;
+}
+.schedulewrap {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 50px;
+}
+.schedulewrap table {
+  width: 95%;
+  border-collapse: collapse;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+}
+.yearmonth th {
+  font-size: 20px;
+  padding: 15px;
+}
+.daysofweek th {
+  font-size: 20px;
+  padding: 15px 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+}
+.schedulewrap table tr td {
+  width: 13%;
+  padding: 10px 0 30px 0;
+  border: 1px solid white;
+}
+.schedulewrap table tr .nonpadding {
+  padding-bottom: 0;
+  background-color: white;
+  color: #000;
+}
+.trainingclolor {
+  background-color: rgb(223, 67, 61);
+}
+.schedulewrap div {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+}
+.schedulewrap div a {
+  color: rgb(223, 67, 61);
+  text-decoration: none;
+  font-size: 22px;
+  margin: 15px 0;
+}
+.schedulewrap div p {
+  width: 90%;
+}
+
+/* SP > matcheshtml */
+.matchespage .nav-matches a {
+  color: white;
+}
+.matcheranking {
+  width: 100%;
+  height: 100%;
+  color: rgb(223, 67, 61);
+}
+.allmatches2020,
+.all-standings {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.matcheranking h3 {
+  padding: 50px 0;
+  font-size: 30px;
+}
+.allmatches2020 > table {
+  width: 90%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.allmatches2020 > table th,
+.allmatches2020 > table td {
+  padding: 10px 0;
+  text-align: center;
+}
+.allmatches2020 > table tr:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.all-standings > table {
+  width: 80%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 30px;
+}
+.all-standings > table th,
+.all-standings > table td {
+  padding: 10px 0;
+  text-align: center;
+}
+.all-standings > table th {
+  font-size: 20px;
+}
+.all-standings > table td {
+  font-size: 17px;
+}
+.all-standings > table tr:first-child {
+  background-color: rgba(223, 67, 61, 0.3);
+}
 
 
 
