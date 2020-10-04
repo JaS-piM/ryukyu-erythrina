@@ -695,7 +695,7 @@ footer > p {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
-  min-height: 3500px;
+  min-height: 4500px;
   background-attachment: fixed;
 }
 .player_wrap {
@@ -710,7 +710,7 @@ footer > p {
   margin: 150px auto;
 }
 .player1 {
-  width: 95%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -775,12 +775,12 @@ footer > p {
   margin-bottom: 3px;
 }
 .wanted {
-  width: 50%;
+  width: 60%;
   height: auto;
   display: flex;
   flex-flow: column;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
   background-color: white;
   color: rgb(223, 67, 61);
   font-weight: bolder;
@@ -788,20 +788,23 @@ footer > p {
   margin: 0 auto;
   padding: 5px;
   margin-top: 100px;
+  text-align: justify;
 }
 .wanted h4 {
   font-size: 50px;
 }
 .wanted p {
+  width: 80%;
   font-size: 25px;
   line-height: 1.5em;
+  margin: 15px 0;
 }
-.wanted .wanted-p-first {
+/* .wanted .wanted-p-first {
   margin-top: 15px;
-}
-.wanted .wanted-p-last {
+} */
+/* .wanted .wanted-p-last {
   margin-bottom: 15px;
-}
+} */
 .wanted a {
   margin-top: 10px;
   color: rgb(223, 67, 61);
@@ -1387,7 +1390,7 @@ justify-content: space-around;
 /* SP > 共通pagetop */
 #pageTop {
   position: fixed;
-  bottom: 15px;
+  bottom: 20px;
   right: 8px;
   z-index: 100;
 }
@@ -1426,7 +1429,7 @@ footer {
 }
 footer > p {
   color: rgb(223, 67, 61);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-top: 40px;
   text-align: center;
   font-size: 11px;
@@ -1859,7 +1862,8 @@ footer > p {
   background-color: rgb(223, 67, 61);
 }
 .schedulewrap div {
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -1876,42 +1880,54 @@ footer > p {
 }
 
 /* SP > matcheshtml */
-.matchespage .nav-matches a {
-  color: white;
-}
+
 .matcheranking {
   width: 100%;
   height: 100%;
   color: rgb(223, 67, 61);
+margin-top: 30px;
 }
+.sp-allmatches2020,
 .allmatches2020,
 .all-standings {
   display: flex;
   flex-flow: column;
   align-items: center;
+  /* margin: 50px 0; */
 }
 .matcheranking h3 {
-  padding: 50px 0;
-  font-size: 30px;
+  /* padding: 50px 0; */
+  margin: 50px 0;
+  font-size: 35px;
 }
+.sp-allmatches2020 > table,
 .allmatches2020 > table {
   width: 90%;
-  border-collapse: collapse;
-  border-spacing: 0;
+  border-collapse: separate;
+  border-spacing: 0 30px;
 }
-.allmatches2020 > table th,
-.allmatches2020 > table td {
+
+.sp-allmatches2020 > table th,
+.allmatches2020 > table th{
   padding: 10px 0;
   text-align: center;
+  vertical-align: middle;
 }
+.sp-allmatches2020 > table td,
+.allmatches2020 > table td {
+  text-align: center;
+  display: block;
+}
+.sp-allmatches2020 > table tr:nth-child(2n),
 .allmatches2020 > table tr:nth-child(2n) {
   background-color: rgba(255, 255, 255, 0.15);
 }
 .all-standings > table {
-  width: 80%;
+  width: 90%;
   border-collapse: collapse;
   border-spacing: 0;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
 .all-standings > table th,
 .all-standings > table td {
@@ -1928,25 +1944,236 @@ footer > p {
   background-color: rgba(223, 67, 61, 0.3);
 }
 
+/* PC > teamhtml */
+.player_fix {
+  background: url(./img/team_sp.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  min-height: 5000px;
+  background-attachment: fixed;
+}
+.player_wrap {
+  position: absolute;
+}
+.player_wrap h3 {
+  width: 100%;
+  font-size: 35px;
+  color: rgb(223, 67, 61);
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin: 30px auto;
+}
+.player1 {
+  width: 98%;
+  margin: 0 auto;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+}
+.person {
+  background-color: white;
+  margin: 50px 0;
+  display: flex;
+  /* border: 4px solid white; */
+}
+.person .personimg {
+  width: 65%;
+  height: 280px;
+  position: relative;
+}
+.player1 li img {
+  width: 100%;
+  height: 280px;
+}
+.person .personimg > div {
+  width: 100%;
+  height: 13%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  background-color: rgb(0, 0, 0);
+}
+.person .personimg > div:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
 
+  /*四角形を傾ける*/
+  transform: skewY(-5deg);
+  transform-origin: bottom left;
 
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+}
+.person .personimg > div p{
+  color: rgb(223, 67, 61);
+  font-weight: bolder;
+}
+.person .personimg > div p strong{
+  font-size: 1em;
+}
+.profile {
+  font-size: 13px;
+  width: 35%;
+  padding-top: 15px;
+  text-align: center;
+  color: rgb(223, 67, 61);
+}
+.profile p{
+  margin-bottom: 3px;
+}
+.wanted {
+  width: 95%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  /* text-align: center; */
+  text-align: justify;
+  background-color: white;
+  color: rgb(223, 67, 61);
+  font-weight: bolder;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 5px;
+  margin-top: 100px;
+}
+.wanted h4 {
+  font-size: 35px;
+}
+.wanted p {
+  font-size: 17px;
+  line-height: 1.5em;
+}
+.wanted .wanted-p-first {
+  margin-top: 15px;
+}
+.wanted .wanted-p-last {
+  margin-bottom: 15px;
+}
+.wanted a {
+  margin-top: 10px;
+  color: rgb(223, 67, 61);
+  text-decoration: none;
+  /* transition: all 0.6s ease 0s; */
+}
+.wanted .wantedmap {
+  margin-bottom: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* SP clubhtml */
+.clubpage .nav-club a {
+  color: white;
+}
+.club-fx {
+  background: url(./img/club-flag.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 3500px;
+  background-attachment: fixed;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.club-bg {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 80%;
+  height: 3500px;
+}
+.club-bg h3 {
+  width: 100%;
+  font-size: 80px;
+  color: rgb(223, 67, 61);
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin: 150px auto 100px auto;
+}
+.club-erythrina-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.club-erythrina img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.club-erythrina p {
+  width: 85%;
+  margin-top: 100px;
+  color: rgb(223, 67, 61);
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 25px;
+  text-align: justify;
+}
+.emblem-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emblem img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.emblem-text p {
+  width: 85%;
+  margin-top: 100px;
+  color: rgb(223, 67, 61);
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 25px;
+  text-align: justify;
+}
+.club-history-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.club-history-text tr {
+  height: 35px;
+}
+.history-year {
+  padding-right: 80px;
+}
+.club-history table {
+  width: 85%;
+  margin-top: 100px;
+  color: rgb(223, 67, 61);
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.about-beachsocor-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-beachsocor p {
+  width: 85%;
+  margin-top: 100px;
+  color: rgb(223, 67, 61);
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 25px;
+  text-align: justify;
+}
 
 
 
@@ -1966,6 +2193,12 @@ footer > p {
 
 
 }
+
+
+
+
+
+
 /* 🍔 */
 /* header > input[type="checkbox"] {
   position: absolute;
