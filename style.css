@@ -964,6 +964,10 @@ footer > p {
 .partner_wrap > .partners > .partner-list a:hover {
   opacity: 0.7;
 }
+.partner_wrap > .partners > .partner-list a img {
+  width: 600px;
+  height: 200px;
+}
 .partner_wrap > .partners > .partner-list .partnerfile {
   display: flex;
   flex-flow: column;
@@ -1071,6 +1075,8 @@ footer > p {
   opacity: 0.7;
 }
 .practiceplace iframe {
+  width: 600px;
+  height: 450px; 
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.7);
   margin: 40px auto;
@@ -1698,22 +1704,14 @@ footer > p {
 /* SP > indexhtml > info */
 .info {
   width: 100%;
-  /* display: flex; */
-  /* justify-content: space-around; */
   margin-top: 50px;
 }
 .info > .news {
   width: 100%;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
 }
 .info > .sns {
   width: 100%;
   margin-top: 50px;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
 }
 .info > .news > h3 {
   font-size: 35px;
@@ -1721,18 +1719,7 @@ footer > p {
   margin-bottom: 50px;
   text-align: center;
 }
-.info > .sns > h3 {
-  /* font-size: 100px; */
-  /* color: rgb(223, 67, 61); */
-  /* margin-bottom: 100px; */
-}
-.ns-contents {
-  /* display: flex; */
-  /* flex-direction: column; */
-}
 .ns-contents > li {
-  /* width: 100%; */
-  /* height: 100px; */
   border: 2px solid rgb(223, 67, 61);
   border-radius: 10px;
   margin-bottom: 10px;
@@ -1759,19 +1746,14 @@ footer > p {
   color: rgb(223, 67, 61);
   text-decoration: none;
 }
-.sns .inst-mv {
-  /* margin-top: 50px; */
-}
 .sns .inst-mv .instagram-media {
   height: 480px;
-  /* min-width: 100%; */
 }
 .sns .fb-mv iframe{
   width: 100%;
 }
 .sns .inst-mv{
   min-width: 100%;
-  /* max-width: 100%; */
 }
 
 /* SP > newshtml */
@@ -2069,32 +2051,29 @@ margin-top: 30px;
 }
 
 /* SP clubhtml */
-.clubpage .nav-club a {
-  color: white;
-}
 .club-fx {
-  background: url(./img/club-flag.jpg);
+  background: url(./img/sp_club.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
-  height: 3500px;
+  height: 2500px;
   background-attachment: fixed;
   display: flex;
   flex-flow: column;
   align-items: center;
 }
 .club-bg {
-  background-color: rgba(255, 255, 255, 0.5);
-  width: 80%;
+  background-color: rgba(255, 255, 255, 0.3);
+  /* width: 98%; */
   height: 3500px;
 }
 .club-bg h3 {
   width: 100%;
-  font-size: 80px;
+  font-size: 30px;
   color: rgb(223, 67, 61);
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
-  margin: 150px auto 100px auto;
+  margin: 50px auto 30px auto;
 }
 .club-erythrina-text {
   width: 100%;
@@ -2103,17 +2082,17 @@ margin-top: 30px;
   align-items: center;
 }
 .club-erythrina img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 .club-erythrina p {
-  width: 85%;
-  margin-top: 100px;
+  /* width: 85%; */
+  margin-top: 30px;
   color: rgb(223, 67, 61);
-  font-size: 20px;
+  font-size: 15px;
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 25px;
+  padding: 15px 10px;
   text-align: justify;
 }
 .emblem-text {
@@ -2123,17 +2102,17 @@ margin-top: 30px;
   align-items: center;
 }
 .emblem img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 .emblem-text p {
-  width: 85%;
-  margin-top: 100px;
+  /* width: 85%; */
+  margin-top: 30px;
   color: rgb(223, 67, 61);
-  font-size: 20px;
+  font-size: 15px;
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 25px;
+  padding: 15px 10px;
   text-align: justify;
 }
 .club-history-text {
@@ -2143,21 +2122,21 @@ margin-top: 30px;
   align-items: center;
 }
 .club-history-text tr {
-  height: 35px;
+  height: 50px;
 }
-.history-year {
-  padding-right: 80px;
+.club-history-text td {
+  display: block;
 }
 .club-history table {
-  width: 85%;
-  margin-top: 100px;
+  /* width: 85%; */
+  margin-top: 30px;
   color: rgb(223, 67, 61);
-  font-size: 20px;
+  font-size: 15px;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 15px 10px;
 }
 .about-beachsocor-text {
   width: 100%;
@@ -2166,31 +2145,213 @@ margin-top: 30px;
   align-items: center;
 }
 .about-beachsocor p {
-  width: 85%;
-  margin-top: 100px;
+  /* width: 85%; */
+  margin-top: 30px;
   color: rgb(223, 67, 61);
-  font-size: 20px;
+  font-size: 15px;
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 25px;
+  padding: 15px 10px;
   text-align: justify;
 }
 
+/* SP > partnerhtml */
+.partner_wrap {
+  color: rgb(223, 67, 61);
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  text-align: center;
+  /* display: flex; */
+  /* flex-flow: column; */
+  /* align-items: center; */
+}
+.partner_wrap > h3 {
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+/* .partner_wrap > .partners {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+} */
+.partner_wrap > .partners > .partner-list {
+  width: 100%;
+  /* height: 500px; */
+  margin-bottom: 50px;
+  border-bottom: 3px solid;
+}
+.partner_wrap > .partners > .partner-list a {
+  text-decoration: none;
+  color: rgb(223, 67, 61);
+  font-size: 1.3em;
+}
+.partner_wrap > .partners > .partner-list a img {
+  width: 300px;
+  height: 120px;
+}
+.partner_wrap > .partners > .partner-list a:hover {
+  /* opacity: 0.7; */
+}
+.partner_wrap > .partners > .partner-list .partnerfile {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  /* align-content: space-around; */
+  /* text-align: center; */
+  width: 100%;
+  margin: 50px auto;
+}
+.partner_wrap > .partners > .partner-list .partnerfile a {
+  margin: 8px auto;
+  /* text-align: center; */
+}
+.partner_wrap > .partners > .partner-list .partnerfile p {
+  width: 90%;
+  text-align: justify;
+  margin: 8px auto;
+}
+.partner_wrap > .partners > .partner-list .partnerfile div {
+  text-align: center;
+}
+.withpartner {
+  margin: 100px auto;
+  padding: 10px 0;
+  width: 95%;
+  border: 3px solid;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.withpartner h4 {
+  font-size: 20px;
+}
+.withpartner p {
+  margin: 10px auto;
+  width: 90%;
+  text-align: justify;
+}
+.withpartner a {
+  color: rgb(223, 67, 61);
+  text-decoration: none;
+  /* transition: all 0.6s ease 0s; */
+}
+/* .withpartner a:hover {
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+} */
 
+/* SP > beachhtml */
+.beach_fix {
+  background: url(./img/sp_tropicalbeach.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: rgb(223, 67, 61);
+  width: 100%;
+  height: 1250px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.practiceplace {
+  /* width: 80%; */
+  min-height: 1200px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 50px;
+}
+.practiceplace > h3 {
+  width: 100%;
+  font-size: 35px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin-bottom: 60px;
+}
+.practiceplace > h4 {
+  width:80%;
+  font-size: 23px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin-bottom: 40px;
+}
+.practiceplace .tropicalbeach {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.practiceplace p {
+  text-align: justify;
+  /* margin: 5px; */
+  padding: 15px;
+}
+.beach_fix a {
+  text-decoration: none;
+  color: rgb(223, 67, 61);
+  margin-bottom: 10px;
+}
+.practiceplace a:hover {
+  /* opacity: 0.7; */
+}
+.practiceplace iframe {
+  width: 98%;
+  height: 98%;
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 40px auto;
+}
+.coution {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: justify;
+}
+.coution p a strong {
+  font-size: 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* SP > makinghtml */
+.making-bg img {
+  width: 100%;
+  height: 50vh;
+}
+.making-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.making-text {
+  top: 30%;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.making-text p {
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(223, 67, 61);
+  margin-bottom: 20px;
+}
+.making-text div a {
+  color: rgb(223, 67, 61);
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
 
 }
 
