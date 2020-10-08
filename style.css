@@ -2193,9 +2193,6 @@ margin-top: 30px;
   width: 300px;
   height: 120px;
 }
-.partner_wrap > .partners > .partner-list a:hover {
-  /* opacity: 0.7; */
-}
 .partner_wrap > .partners > .partner-list .partnerfile {
   display: flex;
   flex-flow: column;
@@ -2297,9 +2294,6 @@ margin-top: 30px;
   text-decoration: none;
   color: rgb(223, 67, 61);
   margin-bottom: 10px;
-}
-.practiceplace a:hover {
-  /* opacity: 0.7; */
 }
 .practiceplace iframe {
   width: 98%;
