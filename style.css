@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
 
 * {
   background-color: black;
@@ -1461,7 +1461,7 @@ footer > p {
   margin: 0;
   padding: 0;
   color: rgb(223, 67, 61);
-  font-size: 60px;
+  font-size: 50px;
   /* font-weight: bolder; */
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -1487,7 +1487,7 @@ footer > p {
 .swiper-slide1 a .swiper-mask1 div {
   width: 100%;
   position: absolute;
-  font-size: 30px;
+  font-size: 26px;
   color: white;
   background: rgba(223, 67, 61, 0.9);
   text-align: center;
@@ -1509,7 +1509,7 @@ footer > p {
 .swiper-slide2 a .swiper-mask2 div {
   width: 100%;
   position: absolute;
-  font-size: 30px;
+  font-size: 26px;
   color: rgb(223, 67, 61);
   text-align: center;
   font-weight: bolder;
@@ -1537,7 +1537,7 @@ footer > p {
 .swiper-slide3 a .swiper-mask3 div {
   width: 100%;
   position: absolute;
-  font-size: 30px;
+  font-size: 26px;
   color: white;
   background: rgba(0, 0, 0, 0.5);
   text-align: right;
@@ -1627,7 +1627,7 @@ footer > p {
 }
 .latestmain > table td,
 .nextmain > table td {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
 .latestmain tr .nextmain tr {
@@ -1748,7 +1748,7 @@ footer > p {
 }
 .sns .fb-mv iframe{
   width: 100%;
-  height: 700px;
+  height: 630px;
 }
 .sns .inst-mv{
   min-width: 100%;
@@ -1881,7 +1881,7 @@ footer > p {
 .matcheranking h3 {
   /* padding: 50px 0; */
   margin: 50px 0;
-  font-size: 45px;
+  font-size: 40px;
 }
 .sp-allmatches2020 > table,
 .allmatches2020 > table {
@@ -1929,7 +1929,7 @@ footer > p {
 
 /* PC > teamhtml */
 .player_fix {
-  background: url(./img/sp_team_.jpg);
+  background: url(./img/sp_team.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
@@ -2071,7 +2071,7 @@ footer > p {
 }
 .club-bg h3 {
   width: 100%;
-  font-size: 38px;
+  font-size: 35px;
   color: rgb(223, 67, 61);
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
