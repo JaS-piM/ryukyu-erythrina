@@ -930,6 +930,13 @@ footer > p {
   padding: 25px;
   text-align: justify;
 }
+.about-beachsocor p a {
+  color: rgb(223, 67, 61);
+  text-decoration: none;
+}
+.about-beachsocor p a:hover {
+  opacity: 0.7;
+}
 
 /* PC > partnerhtml */
 .partnerpage .nav-partner a {
@@ -2155,6 +2162,10 @@ footer > p {
   padding: 15px 10px;
   text-align: justify;
 }
+.about-beachsocor p a {
+  color: rgb(223, 67, 61);
+  text-decoration: none;
+}
 
 /* SP > partnerhtml */
 .partner_wrap {
@@ -2171,15 +2182,6 @@ footer > p {
   font-size: 45px;
   margin-bottom: 50px;
 }
-/* .partner_wrap > .partners {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  height: 100%;
-} */
 .partner_wrap > .partners > .partner-list {
   width: 100%;
   /* height: 500px; */
@@ -2238,10 +2240,6 @@ footer > p {
   text-decoration: none;
   /* transition: all 0.6s ease 0s; */
 }
-/* .withpartner a:hover {
-  cursor: pointer;
-  transform: scale(1.2, 1.2);
-} */
 
 /* SP > beachhtml */
 .beach_fix {
