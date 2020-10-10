@@ -1,7 +1,12 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
 
 * {
   background-color: black;
+}
+h2, h3, h4{
+  font-family: 'Graduate', cursive;
+  font-weight: bolder;
 }
 
 /* responsive PC*/
@@ -1184,9 +1189,6 @@ header {
   text-decoration: none;
   margin: 10px 10px;
 }
-.logo > a:hover {
-  opacity: 0.6;
-}
 .logo > a > img {
   height: 40px;
   width: 40px;
@@ -1196,7 +1198,7 @@ header {
 .logo > a > .logotext {
   color: rgb(223, 67, 61);
   align-self: center;
-  font-size: 10px;
+  font-size: 11px;
 }
 .logo > a > .logotext > span {
   display: block; /*spanをブロック要素にしてstrongを折り返す*/
@@ -1459,8 +1461,8 @@ footer > p {
   margin: 0;
   padding: 0;
   color: rgb(223, 67, 61);
-  font-size: 40px;
-  font-weight: bolder;
+  font-size: 60px;
+  /* font-weight: bolder; */
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
   text-align: center;
@@ -1485,7 +1487,7 @@ footer > p {
 .swiper-slide1 a .swiper-mask1 div {
   width: 100%;
   position: absolute;
-  font-size: 150%;
+  font-size: 30px;
   color: white;
   background: rgba(223, 67, 61, 0.9);
   text-align: center;
@@ -1507,7 +1509,7 @@ footer > p {
 .swiper-slide2 a .swiper-mask2 div {
   width: 100%;
   position: absolute;
-  font-size: 150%;
+  font-size: 30px;
   color: rgb(223, 67, 61);
   text-align: center;
   font-weight: bolder;
@@ -1535,7 +1537,7 @@ footer > p {
 .swiper-slide3 a .swiper-mask3 div {
   width: 100%;
   position: absolute;
-  font-size: 150%;
+  font-size: 30px;
   color: white;
   background: rgba(0, 0, 0, 0.5);
   text-align: right;
@@ -1565,7 +1567,7 @@ footer > p {
   margin-top: 50px;
 }
 .matches > h3 {
-  font-size: 35px;
+  font-size: 45px;
   margin-bottom: 30px;
 }
 .Wmatches {
@@ -1625,7 +1627,8 @@ footer > p {
 }
 .latestmain > table td,
 .nextmain > table td {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
 }
 .latestmain tr .nextmain tr {
   display: flex;
@@ -1639,9 +1642,6 @@ footer > p {
 .Wmatches a {
   color: rgb(223, 67, 61);
   text-decoration: none;
-}
-.Wmatches a:hover {
-  opacity: 0.7;
 }
 
 /* SP > indexhtml > ranking*/
@@ -1674,14 +1674,14 @@ footer > p {
   justify-content: space-around;
 }
 .ranking h3 {
-  font-size: 35px;
+  font-size: 40px;
 }
 .rank-contents {
   display: flex;
   align-items: center;
 }
 .ranking .number {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: bolder;
 }
 .ranking .place {
@@ -1697,9 +1697,6 @@ footer > p {
 .standings a {
   color: #000;
 }
-.standings a:hover {
-  opacity: 0.6;
-}
 
 /* SP > indexhtml > info */
 .info {
@@ -1714,7 +1711,7 @@ footer > p {
   margin-top: 50px;
 }
 .info > .news > h3 {
-  font-size: 35px;
+  font-size: 45px;
   color: rgb(223, 67, 61);
   margin-bottom: 50px;
   text-align: center;
@@ -1734,9 +1731,9 @@ footer > p {
   border-radius: 10px;
 }
 .ns-contents > li > a > div > p {
-  color: rgb(223, 67, 61);
+  color: rgb(255, 255, 255);
   padding: 8px;
-  font-size: 14px;
+  font-size: 16px;
 }
 .info > .news > .ns-more {
   text-align: center;
@@ -1751,6 +1748,7 @@ footer > p {
 }
 .sns .fb-mv iframe{
   width: 100%;
+  height: 600px;
 }
 .sns .inst-mv{
   min-width: 100%;
@@ -1775,10 +1773,10 @@ footer > p {
 .newshtml .NEW,
 .newshtml .sch {
   padding-bottom: 50px;
-  font-size: 35px;
+  font-size: 45px;
 }
 .newshtml .tra {
-  font-size: 35px;
+  font-size: 45px;
 }
 .newshtml .news-contents {
   width: 90%;
@@ -1793,7 +1791,7 @@ footer > p {
   margin-bottom: 30px;
 }
 .newshtml .news-contents li a {
-  color: rgb(223, 67, 61);
+  color: rgb(255, 255, 255);
   display: flex;
   text-decoration: none;
 }
@@ -1805,6 +1803,9 @@ footer > p {
 }
 .newshtml .news-contents li a .caption {
   padding: 0 10px;
+}
+.newshtml .news-contents li a .caption p:last-child{
+  padding-top: 15px;
 }
 .schedulewrap {
   width: 100%;
@@ -1867,7 +1868,7 @@ footer > p {
   width: 100%;
   height: 100%;
   color: rgb(223, 67, 61);
-margin-top: 30px;
+  margin-top: 30px;
 }
 .sp-allmatches2020,
 .allmatches2020,
@@ -1880,7 +1881,7 @@ margin-top: 30px;
 .matcheranking h3 {
   /* padding: 50px 0; */
   margin: 50px 0;
-  font-size: 35px;
+  font-size: 45px;
 }
 .sp-allmatches2020 > table,
 .allmatches2020 > table {
@@ -1932,7 +1933,7 @@ margin-top: 30px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
-  min-height: 5000px;
+  min-height: 4800px;
   background-attachment: fixed;
 }
 .player_wrap {
@@ -1940,7 +1941,7 @@ margin-top: 30px;
 }
 .player_wrap h3 {
   width: 100%;
-  font-size: 35px;
+  font-size: 45px;
   color: rgb(223, 67, 61);
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
@@ -2002,7 +2003,8 @@ margin-top: 30px;
   font-size: 1em;
 }
 .profile {
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: bold;
   width: 35%;
   padding-top: 15px;
   text-align: center;
@@ -2069,7 +2071,7 @@ margin-top: 30px;
 }
 .club-bg h3 {
   width: 100%;
-  font-size: 30px;
+  font-size: 38px;
   color: rgb(223, 67, 61);
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
@@ -2090,7 +2092,7 @@ margin-top: 30px;
   /* width: 85%; */
   margin-top: 30px;
   color: rgb(223, 67, 61);
-  font-size: 15px;
+  font-size: 16px;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 15px 10px;
   text-align: justify;
@@ -2110,7 +2112,7 @@ margin-top: 30px;
   /* width: 85%; */
   margin-top: 30px;
   color: rgb(223, 67, 61);
-  font-size: 15px;
+  font-size: 16px;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 15px 10px;
   text-align: justify;
@@ -2131,7 +2133,7 @@ margin-top: 30px;
   /* width: 85%; */
   margin-top: 30px;
   color: rgb(223, 67, 61);
-  font-size: 15px;
+  font-size: 16px;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
@@ -2148,7 +2150,7 @@ margin-top: 30px;
   /* width: 85%; */
   margin-top: 30px;
   color: rgb(223, 67, 61);
-  font-size: 15px;
+  font-size: 16px;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 15px 10px;
   text-align: justify;
@@ -2166,7 +2168,7 @@ margin-top: 30px;
   /* align-items: center; */
 }
 .partner_wrap > h3 {
-  font-size: 35px;
+  font-size: 45px;
   margin-bottom: 50px;
 }
 /* .partner_wrap > .partners {
@@ -2265,7 +2267,7 @@ margin-top: 30px;
 }
 .practiceplace > h3 {
   width: 100%;
-  font-size: 35px;
+  font-size: 45px;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   margin-bottom: 60px;
@@ -2327,7 +2329,7 @@ margin-top: 30px;
   position: relative;
 }
 .making-text {
-  top: 30%;
+  top: 35%;
   left: 50%;
   margin: 0;
   padding: 0;
@@ -2335,10 +2337,11 @@ margin-top: 30px;
   position: absolute;
 }
 .making-text p {
-  font-size: 30px;
+  font-size: 45px;
+  font-family: 'Graduate', cursive;
   font-weight: bolder;
   color: rgb(223, 67, 61);
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .making-text div a {
   color: rgb(223, 67, 61);
