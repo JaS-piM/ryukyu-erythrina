@@ -17,7 +17,7 @@ h2, h3, h4{
 /* 共通header */
 header {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -110,10 +110,11 @@ header {
 
 /* 共通partner */
 .partner {
-  width: 85%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 150px auto;
+  align-items: center;
+  padding-top: 100px;
   background-color: black;
 }
 .partner > .partner1 > li > a > img {
@@ -134,15 +135,17 @@ header {
   cursor: pointer;
   transform: scale(1.1, 1.1);
 }
-.partner1 {
+.partner1,.partner2 {
+  width: 80%;
   display: flex;
   justify-content: space-around;
   margin-bottom: 50px;
 }
-.partner2 {
+/* .partner2 {
+  width: 80%;
   display: flex;
   justify-content: space-around;
-}
+} */
 
 /* 共通footer */
 footer {
@@ -241,7 +244,7 @@ footer > p {
   color: rgb(223, 67, 61);
   font-size: 130px;
   font-weight: bolder;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
   text-align: center;
 }
@@ -267,7 +270,7 @@ footer > p {
   width: 100%;
   position: absolute;
   font-size: 300%;
-  color: white;
+  color: rgb(0, 0, 0);
   background: rgba(223, 67, 61, 0.9);
   text-align: center;
   top: 0;
@@ -292,7 +295,7 @@ footer > p {
   color: rgb(223, 67, 61);
   text-align: center;
   font-weight: bolder;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
@@ -336,7 +339,7 @@ footer > p {
 
 /* PC > indexhtml > matches */
 .matches {
-  background-color: black;
+  /* background-color: black; */
   color: rgb(223, 67, 61);
   height: 50vh;
   display: flex;
@@ -367,7 +370,7 @@ footer > p {
   font-size: 35px;
   background: rgb(223, 67, 61);
   text-align: center;
-  color: #000;
+  color: white;
   font-weight: bold;
   letter-spacing: 0.05em;
   width: 100%;
@@ -564,6 +567,7 @@ footer > p {
 .newshtml h3 {
   padding-bottom: 100px;
   font-size: 100px;
+  color: rgb(223, 67, 61);
 }
 .newshtml .news-contents {
   width: 100%;
@@ -601,8 +605,8 @@ footer > p {
 .schedulewrap table {
   width: 60%;
   border-collapse: collapse;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid rgb(223, 67, 61);
+  color: rgb(223, 67, 61);
   text-align: center;
 }
 .yearmonth th {
@@ -612,22 +616,25 @@ footer > p {
 .daysofweek th {
   font-size: 20px;
   padding: 15px 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid white;
+  border: 1px solid rgb(223, 67, 61);
 }
 .schedulewrap table tr td {
   width: 13%;
   padding: 10px 0 50px 0;
-  border: 1px solid white;
+  border: 1px solid rgb(223, 67, 61);
 }
 .schedulewrap table tr .nonpadding {
   padding-bottom: 0;
+  background-color: black;
 }
 .trainingclolor {
+  color: white;
   background-color: rgb(223, 67, 61);
 }
 .schedulewrap div {
-  margin-top: 30px;
+  color: rgb(223, 67, 61);
+  margin: 30px 0;
+  font-weight: bold;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -663,21 +670,26 @@ footer > p {
 }
 .allmatches2020 > table {
   width: 70%;
+  height: 40vh;
   border-collapse: collapse;
   border-spacing: 0;
+}
+.allmatches2020 > table tr{
+  height: 63px;
 }
 .allmatches2020 > table th,
 .allmatches2020 > table td {
-  padding: 10px 0;
+  line-height: 63px;
   text-align: center;
 }
 .allmatches2020 > table tr:nth-child(2n) {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(223, 67, 61, 0.3);
 }
 .all-standings > table {
-  width: 30%;
+  width: 40%;
   border-collapse: collapse;
   border-spacing: 0;
+  margin-bottom: 80px;
 }
 .all-standings > table th,
 .all-standings > table td {
@@ -1020,7 +1032,7 @@ z-index: -1;
   color: rgb(223, 67, 61);
   width: 100%;
   height: 100%;
-  padding-top: 150px;
+  padding: 150px 0;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -1053,6 +1065,7 @@ z-index: -1;
 .partner_wrap > .partners > .partner-list a img {
   width: 600px;
   height: 200px;
+  border: 3px solid black;
 }
 .partner_wrap > .partners > .partner-list .partnerfile {
   display: flex;
@@ -1259,7 +1272,7 @@ img {
 /* SP > 共通header */
 header {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 1);
   display: flex;
   justify-content: space-between;
   /* position: absolute; */
@@ -1546,7 +1559,7 @@ footer > p {
   color: rgb(223, 67, 61);
   font-size: 50px;
   /* font-weight: bolder; */
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
   text-align: center;
   /* line-height: 1.5em; */
@@ -1571,7 +1584,8 @@ footer > p {
   width: 100%;
   position: absolute;
   font-size: 26px;
-  color: white;
+  color: black;
+/* font-weight: 550; */
   background: rgba(223, 67, 61, 0.9);
   text-align: center;
   top: 0;
@@ -1584,9 +1598,9 @@ footer > p {
   top: 0;
   left: 0;
 }
-.swiper-slide1:hover .swiper-mask1 {
+/* .swiper-slide1:hover .swiper-mask1 {
   background-color: rgba(0, 0, 0, 0.4);
-}
+} */
 
 /* 自販機 */
 .swiper-slide2 a .swiper-mask2 div {
@@ -1596,7 +1610,7 @@ footer > p {
   color: rgb(223, 67, 61);
   text-align: center;
   font-weight: bolder;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
@@ -1612,9 +1626,9 @@ footer > p {
   top: 0;
   left: 0;
 }
-.swiper-slide2:hover .swiper-mask2 {
+/* .swiper-slide2:hover .swiper-mask2 {
   background-color: rgba(0, 0, 0, 0.4);
-}
+} */
 
 /* 選手募集 */
 .swiper-slide3 a .swiper-mask3 div {
@@ -1634,9 +1648,9 @@ footer > p {
   top: 0;
   left: 0;
 }
-.swiper-slide3:hover .swiper-mask3 {
+/* .swiper-slide3:hover .swiper-mask3 {
   background-color: rgba(0, 0, 0, 0.4);
-}
+} */
 
 /* SP > indexhtml > matches */
 .matches {
@@ -1793,7 +1807,8 @@ footer > p {
   width: 100%;
   margin-top: 50px;
 }
-.info > .news > h3 {
+.info > .news > h3,
+.info > .sns > h3 {
   font-size: 45px;
   color: rgb(223, 67, 61);
   margin-bottom: 50px;
@@ -1814,13 +1829,14 @@ footer > p {
   border-radius: 10px;
 }
 .ns-contents > li > a > div > p {
-  color: rgb(255, 255, 255);
+  color: rgb(223, 67, 61);
   padding: 8px;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: bold;
 }
 .info > .news > .ns-more {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .info > .news > .ns-more > a {
   color: rgb(223, 67, 61);
@@ -1874,7 +1890,7 @@ footer > p {
   margin-bottom: 30px;
 }
 .newshtml .news-contents li a {
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   display: flex;
   text-decoration: none;
 }
@@ -1886,6 +1902,9 @@ footer > p {
 }
 .newshtml .news-contents li a .caption {
   padding: 0 10px;
+  color: rgb(223, 67, 61);
+  font-size: 14px;
+  font-weight: bold;
 }
 .newshtml .news-contents li a .caption p:last-child{
   padding-top: 15px;
@@ -1900,8 +1919,8 @@ footer > p {
 .schedulewrap table {
   width: 95%;
   border-collapse: collapse;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid rgb(223, 67, 61);
+  color: rgb(223, 67, 61);
   text-align: center;
 }
 .yearmonth th {
@@ -1911,23 +1930,24 @@ footer > p {
 .daysofweek th {
   font-size: 20px;
   padding: 15px 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid white;
+  border: 1px solid rgb(223, 67, 61);
 }
 .schedulewrap table tr td {
   width: 13%;
   padding: 10px 0 30px 0;
-  border: 1px solid white;
+  border: 1px solid rgb(223, 67, 61);
 }
 .schedulewrap table tr .nonpadding {
   padding-bottom: 0;
-  background-color: white;
-  color: #000;
+  background-color: black;
 }
 .trainingclolor {
+  color: white;
   background-color: rgb(223, 67, 61);
 }
 .schedulewrap div {
+  color: rgb(223, 67, 61);
+  font-weight: bold;
   margin-top: 50px;
   margin-bottom: 30px;
   display: flex;
@@ -1943,6 +1963,9 @@ footer > p {
 }
 .schedulewrap div p {
   width: 90%;
+}
+.schedulewrap div p:last-child{
+  text-align: justify;
 }
 
 /* SP > matcheshtml */
@@ -1986,7 +2009,7 @@ footer > p {
 }
 .sp-allmatches2020 > table tr:nth-child(2n),
 .allmatches2020 > table tr:nth-child(2n) {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color:rgba(223, 67, 61, 0.3);
 }
 .all-standings > table {
   width: 90%;
@@ -2011,6 +2034,8 @@ footer > p {
 }
 
 /* SP > teamhtml */
+
+
 /* .player_fix {
   background: url(./img/sp_team.jpg);
   background-repeat: no-repeat;
@@ -2019,23 +2044,6 @@ footer > p {
   min-height: 4800px;
   background-attachment: fixed;
 } */
-.team-fx::before {
-  content:"";
-  display:block;
-  position:fixed;
-  top:0;
-  left:0;
-  z-index:-1;
-  width:100%;
-  height:100vh;
-  background-repeat:no-repeat;
-  background-position:50% 100%;
-  background-image:url(./img/sp_team.jpg);
-  background-size:cover;
-  }
-  .player_fix{
-    min-height: 100%;
-  }
 
 /* .player_fix::before {
   content:"";
@@ -2051,14 +2059,33 @@ footer > p {
   background-image:url(./img/sp_team.jpg);
   background-size:cover;
   } */
+
+
+.team-fx::before {
+  content:"";
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+  width:100%;
+  height:100vh;
+  background-repeat:no-repeat;
+  background-position:50% 100%;
+  background-image:url(./img/sp_team.jpg);
+  background-size:cover;
+  }
+.player_fix{
+  min-height: 100%;
+  }
 .player_wrap {
   margin-bottom: 50px;
-}
+  }
 .player_wrap h3 {
   width: 100%;
   font-size: 45px;
   color: rgb(223, 67, 61);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   text-align: center;
   margin: 30px auto;
 }
@@ -2168,7 +2195,31 @@ footer > p {
 }
 
 /* SP clubhtml */
-.club-fx {
+.club-fx::before {
+  content:"";
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+  width:100%;
+  height:100vh;
+  background-repeat:no-repeat;
+  background-position:50% 100%;
+  background-image:url(./img/sp_club.jpg);
+  background-size:cover;
+  }
+  .club-fx{
+    min-height: 100%;
+  }
+  .club-bg {
+    margin-bottom: 50px;
+  }
+  
+
+
+
+/* .club-fx {
   background: url(./img/sp_club.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -2181,9 +2232,11 @@ footer > p {
 }
 .club-bg {
   background-color: rgba(255, 255, 255, 0.3);
-  /* width: 98%; */
   height: 3500px;
-}
+} */
+
+
+
 .club-bg h3 {
   width: 100%;
   font-size: 35px;
@@ -2304,6 +2357,7 @@ footer > p {
 .partner_wrap > .partners > .partner-list a img {
   width: 300px;
   height: 120px;
+  border: 2px solid black;
 }
 .partner_wrap > .partners > .partner-list .partnerfile {
   display: flex;
@@ -2350,7 +2404,33 @@ footer > p {
 }
 
 /* SP > beachhtml */
-.beach_fix {
+.beach_fix::before {
+  content:"";
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+  width:100%;
+  height:100vh;
+  background-repeat:no-repeat;
+  background-position:50% 100%;
+  background-image:url(./img/sp_tropicalbeach.jpg);
+  background-size:cover;
+  }
+  .beach_fix{
+    min-height: 100%;
+    color: rgb(223, 67, 61);
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+
+
+/* .beach_fix {
   background: url(./img/sp_tropicalbeach.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -2361,16 +2441,22 @@ footer > p {
   display: flex;
   flex-flow: column;
   align-items: center;
-}
+} */
+
+
+
 .practiceplace {
-  /* width: 80%; */
-  min-height: 1200px;
+  margin-bottom: 50px;
+  min-height: 1000px;
   background-color: rgba(255, 255, 255, 0.3);
   display: flex;
   flex-flow: column;
   align-items: center;
   padding-top: 50px;
 }
+
+
+
 .practiceplace > h3 {
   width: 100%;
   font-size: 45px;
@@ -2405,7 +2491,7 @@ footer > p {
 }
 .practiceplace iframe {
   width: 98%;
-  height: 98%;
+  height: 40vh;
   padding: 2px;
   background-color: rgba(0, 0, 0, 0.7);
   margin: 40px auto;
@@ -2423,9 +2509,12 @@ footer > p {
 }
 
 /* SP > makinghtml */
+.making-bg{
+  background-color: black;
+}
 .making-bg img {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
 }
 .making-text {
   width: 100%;
