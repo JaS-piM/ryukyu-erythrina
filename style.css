@@ -2033,6 +2033,9 @@ footer > p {
   background-image:url(./img/sp_team.jpg);
   background-size:cover;
   }
+  .player_fix{
+    min-height: 100%;
+  }
 
 /* .player_fix::before {
   content:"";
@@ -2049,7 +2052,7 @@ footer > p {
   background-size:cover;
   } */
 .player_wrap {
-  position: absolute;
+  margin-bottom: 50px;
 }
 .player_wrap h3 {
   width: 100%;
