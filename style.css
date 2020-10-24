@@ -17,10 +17,10 @@ h2, h3, h4{
 /* 共通header */
 header {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color:black;
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  /* position: absolute; */
   z-index: 100;
   top: 0;
 }
@@ -141,11 +141,6 @@ header {
   justify-content: space-around;
   margin-bottom: 50px;
 }
-/* .partner2 {
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
-} */
 
 /* 共通footer */
 footer {
